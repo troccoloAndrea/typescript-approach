@@ -1,0 +1,17 @@
+.navbar{
+    padding-top:20px;
+    padding-bottom:20px;
+    background-color: #EFEEF4;
+    color:#262626 !important;
+}
+
+.navbar-brand{
+    color:#8C8C8C;
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: -0.5px;
+}
+
+.nav-link{
+    color:#262626;
+}

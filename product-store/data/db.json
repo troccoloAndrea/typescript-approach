@@ -1,0 +1,60 @@
+{
+    "products":[
+        {
+            "id":1,
+            "description": "Bread",
+            "price": 2.50,
+            "stock": 50,
+            "category":1
+        },
+        {
+            "id":2,
+            "description": "Milk",
+            "price": 3.60,
+            "stock": 180,
+            "category":1
+        },
+        {
+            "id":3,
+            "description": "Hammer",
+            "price": 5.80,
+            "stock": 40,
+            "category":2
+        },
+        {
+            "id":4,
+            "description": "Hoodie",
+            "price": 10.70,
+            "stock": 30,
+            "category":3
+        },
+        {
+            "id":5,
+            "description": "Drill",
+            "price": 19.90,
+            "stock": 10,
+            "category":2
+        },
+        {
+            "id":6,
+            "description": "Jeans",
+            "price": 49.99,
+            "stock": 20,
+            "category":3
+        }
+    ],
+    "categories" :[
+        {
+            "id": 1,
+            "name": "Foods & Beverages"
+        },
+        {
+            "id": 2,
+            "name" : "Tools"
+        },
+        {
+            "id": 3,
+            "name": "Clothes"
+        }
+    ]
+}
