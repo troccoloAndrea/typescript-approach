@@ -1,17 +1,30 @@
-.navbar{
-    padding-top:20px;
-    padding-bottom:20px;
-    background-color: #EFEEF4;
-    color:#262626 !important;
-}
+.navbar {
+    background-color: #fff;
+    padding: 20px 0px 20px 00px;
+  }
+  
+  .navbar-brand {
+    text-decoration: none !important;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    color: #2E2752;
+    font-size: 2rem;
+    transition: 0.3s;
+  }
+  
+  .navbar-brand:hover{
+    color:#5A33E4;
+  }
 
-.navbar-brand{
-    color:#8C8C8C;
-    font-weight: 500;
-    font-size: 1.5rem;
-    letter-spacing: -0.5px;
-}
+  .nav-item{
+      padding-left:12px;
+  }
 
-.nav-link{
-    color:#262626;
-}
+  .nav-link{
+      color: #2E2752;
+      transition: 0.3s;
+  }
+
+  .nav-link:hover{
+      color:#5A33E4;
+  }

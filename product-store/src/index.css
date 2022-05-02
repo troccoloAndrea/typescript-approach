@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Rubik', sans-serif;
+*/
 
 *{
   margin:0;
@@ -6,4 +11,108 @@
   font-family: 'Roboto', sans-serif;
 }
 
+body{
+  background-color: #EBEDF2;
+}
 
+
+/*fix*/
+
+.purple-text {
+  color: #5A33E4;
+}
+
+.purple-button {
+  background-color: transparent;
+  color: #5A33E4;
+  border-radius: 1000px;
+  border-color: #5A33E4;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px 20px 10px 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: -0.15px;
+  transition: 0.3s;
+  text-decoration: none !important;
+  cursor: pointer;
+  width: max-content;
+  max-height: 46px;
+}
+
+.purple-button-sm{
+  font-size: 0.8rem;
+  padding: 8px 16px 8px 16px;
+}
+
+.purple-button svg{
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.purple-button:hover {
+  color: #fff;
+  background-color: #5A33E4;
+}
+
+.purple-button-delete{
+  background-color: transparent;
+  color: #DC3545;
+  border-color: #DC3545;
+}
+
+.purple-button-delete:hover{
+  background-color: #DC3545;
+  color:#fff;
+}
+
+.list .purple-button{
+  margin-left: 24px;
+}
+
+tr .value{
+  width: 14%;
+}
+tr .actions{
+  width: 30%
+}
+
+h1{
+  font-family: 'Rubik', sans-serif;
+  font-weight: 600;
+  color: #2E2752;
+  font-size: 1.5rem;
+  letter-spacing: -0.5px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+.action-box{
+  display: flex;
+  flex-direction: row !important;
+  height: 100%;
+  flex-direction: column;
+  justify-content:flex-end;
+  vertical-align:middle;
+}
+.action-box .purple-button{
+  margin-left: 24px;
+}
+
+.list{
+  margin-top:50px;
+}
+
+
+
+.my-spinner{
+  margin-bottom: 20px;
+  color:#5A33E4;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
