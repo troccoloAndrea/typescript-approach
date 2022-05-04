@@ -3,9 +3,9 @@
     {
       "id": 1,
       "description": "Bread",
-      "price": 2.5,
-      "stock": 50,
-      "category": 1
+      "price": "2.5",
+      "stock": "50",
+      "category": "1"
     },
     {
       "id": 2,

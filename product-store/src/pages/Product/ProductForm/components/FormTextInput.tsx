@@ -1,22 +1,25 @@
 import React from 'react'
-import { FormState, UseFormRegister } from 'react-hook-form'
+import { FieldError, FormState, UseFormRegister } from 'react-hook-form'
 import { Product } from '../../models/Product'
+
+export type ProductField = "id" | "description" | "stock" | "price" | "category";
 
 type FromTextInputProps = {
   register: UseFormRegister<Product>,
-  formState: FormState<Product>,
-  fieldName: Product,
+  defaultValue: string,
+  fieldError?: FieldError,
+  fieldName: ProductField,
   fieldPlaceholder: string,
   errorFeedback: string
 
 }
 
-const FormTextInput = ({ register, formState , errorFeedback, fieldName, fieldPlaceholder }: FromTextInputProps) => {
+const FormTextInput = ({ register, defaultValue, fieldName, fieldError, errorFeedback, fieldPlaceholder }: FromTextInputProps) => {
   return (
     <div className="mb-3">
       <label className='form-label'>{fieldName}</label>
-      <input className={`form-control ${formState.errors. && 'is-invalid'}`} {...register(fieldName, { required: true })} placeholder={fieldPlaceholder} />
-      {formState.errors.id && <span className='invalid-feedback'>{errorFeedback}</span>}
+      <input defaultValue={defaultValue} className={`form-control ${fieldError && 'is-invalid'}`} {...register(fieldName, { required: true })} placeholder={fieldPlaceholder} />
+      {fieldError && <span className='invalid-feedback'>{errorFeedback}</span>}
     </div>
   )
 }
