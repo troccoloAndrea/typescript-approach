@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import './App.css';
 import Footer from './shared/Footer';
+import InsertProduct from './pages/Product/InsertProduct';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Routes>
             <Route path="/" element={<ProductPage />} />
             <Route path="/categories" element={<CategoryPage/>} />
+            <Route path="/product/insert" element={<InsertProduct/>}/>
           </Routes>        
         </main>
       </div>
